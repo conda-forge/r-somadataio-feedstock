@@ -1,4 +1,4 @@
-{% set version = '6.4.0' %}
+{% set version = "6.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SomaDataIO_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SomaDataIO/SomaDataIO_{{ version }}.tar.gz
-  sha256: 77ce95a0a1252fa7c7b200fdde12454569d9df84c6329481b9a3152d0a412ace
+  sha256: 3519a8214426339f3fec75766b6ed9fe614772d36104c4ba335b60c351d8c6b5
 
 build:
   number: 0
@@ -55,15 +55,12 @@ test:
 about:
   home: https://somalogic.github.io/SomaDataIO/, https://somalogic.com
   license: MIT
-  summary: Load and export 'SomaScan' data via the 'Standard BioTools, Inc.' structured text
-    file called an ADAT ('*.adat'). For file format see <https://github.com/SomaLogic/SomaLogic-Data/blob/main/README.md>.
-    The package also exports auxiliary functions for manipulating, wrangling, and extracting
-    relevant information from an ADAT object once in memory.
+  summary: Load and export 'SomaScan' data via the 'Standard BioTools, Inc.' structured text file called an ADAT ('*.adat'). For file format see <https://github.com/SomaLogic/SomaLogic-Data/blob/main/README.md>. The package also exports auxiliary functions for manipulating, wrangling, and extracting relevant 
+    information from an ADAT object once in memory.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
     - LICENSE
-# Type: Package
 
 extra:
   recipe-maintainers:
